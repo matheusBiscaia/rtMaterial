@@ -1,62 +1,56 @@
-# RT Materiais de Construcao
+# 🏗️ RT Materiais de Construcao
 
-Site institucional da RT Materiais de Construcao, com catalogo de produtos e contato rapido por WhatsApp e e-mail.
+**RT Materiais de Construcao** e um site institucional criado para apresentar a empresa na web, divulgar os principais produtos e facilitar o contato rapido com clientes por **WhatsApp** e **e-mail**.
 
-## Sobre o projeto
+O projeto foi pensado para ser simples, direto e funcional, com foco em navegacao clara e boa visualizacao tanto no computador quanto no celular.
 
-Este projeto foi desenvolvido para apresentar a empresa RT Materiais na web de forma simples, direta e profissional.
-O objetivo e facilitar o acesso dos clientes aos produtos, aos canais de atendimento e as informacoes principais da empresa.
+## ✨ Funcionalidades Principais
 
-## Funcionalidades
+- **Pagina Inicial:** apresentacao da empresa e destaque para atendimento rapido
+- **Catalogo de Produtos:** exibicao dos materiais disponiveis
+- **Pagina de Contato:** acesso rapido ao WhatsApp e ao e-mail
+- **Botao de WhatsApp:** abre a conversa diretamente
+- **Botao de E-mail:** abre o aplicativo de e-mail automaticamente
+- **Layout Responsivo:** adaptado para desktop e mobile
 
-- Pagina inicial institucional
-- Catalogo de produtos
-- Pagina de contato
-- Botao para abrir conversa no WhatsApp
-- Botao para enviar e-mail
-- Layout responsivo para desktop e mobile
+## 🧰 Tecnologias Utilizadas
 
-## Tecnologias utilizadas
+- **React**
+- **React Router**
+- **CSS**
+- **Vercel** para deploy
 
-- React
-- React Router
-- CSS
-- Vercel
-
-## Estrutura do projeto
-
-- `src/`: componentes, paginas e estilos do frontend
-- `public/`: arquivos estaticos, favicon e imagens
-- `RtMateriais.Api/`: estrutura de API em ASP.NET para evolucao futura
-
-## Como rodar localmente
+## 📁 Estrutura do Projeto
 
 ```bash
-npm install
-npm start
+rtmateriais-site/
+├── public/            # arquivos estaticos, imagens e favicon
+├── src/
+│   ├── components/    # componentes reutilizaveis
+│   ├── data/          # dados dos produtos
+│   └── pages/         # paginas do site
+└── RtMateriais.Api/   # estrutura de API para evolucao futura
 ```
 
-O projeto sera aberto em:
+## 🌐 Deploy
 
-```bash
-http://localhost:3000
+O projeto esta preparado para publicacao na **Vercel**.
+
+Quando o deploy estiver online, voce pode adicionar aqui:
+
+```md
+🔗 Acesse o site: https://seu-link-aqui.vercel.app
 ```
 
-## Como gerar build de producao
+## 📞 Contato
 
-```bash
-npm run build
-```
+- **WhatsApp:** `(71) 994403860`
+- **E-mail:** `matheusbiscaia@yahoo.com.br`
 
-## Deploy
+## 📝 Observacao
 
-O projeto pode ser publicado facilmente na Vercel conectando este repositório ao GitHub.
+A pasta `RtMateriais.Api` permanece no projeto para uma futura expansao com backend, mas o deploy principal atual e o **frontend em React**.
 
-## Contato
+---
 
-- WhatsApp: `(71) 99351-5860`
-- E-mail: `rtmateria03@gmail.com`
-
-## Observacao
-
-A pasta `RtMateriais.Api` existe para expansao futura do sistema, mas o deploy principal deste projeto e o frontend em React.
+Feito para apresentar a **RT Materiais de Construcao** de forma profissional na web.
