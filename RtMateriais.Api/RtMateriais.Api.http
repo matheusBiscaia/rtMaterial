@@ -1,0 +1,6 @@
+@RtMateriais_Api_HostAddress = http://localhost:5211
+
+GET {{RtMateriais_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

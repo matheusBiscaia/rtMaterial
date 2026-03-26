@@ -1,0 +1,10 @@
+.catHeader{padding: 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
+.filters{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+
+.itemCard{padding: 16px}
+.itemTop{display:flex; justify-content:space-between; align-items:flex-start; gap:10px}
+.itemName{font-weight:900; font-size: 16px}
+.itemRow{display:flex; justify-content:space-between; margin: 10px 0}
+.ok{color: rgba(0,255,200,.95)}
+.warn{color: rgba(255,200,120,.95)}
+.itemActions{display:flex; gap:10px; margin-top: 12px; flex-wrap:wrap}
