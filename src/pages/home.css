@@ -63,20 +63,27 @@
 
 @media(max-width:640px){
   .hero{
-    padding: 16px;
-    gap: 16px;
+    padding: 14px;
+    gap: 14px;
   }
   .hero h1{
-    font-size: 30px;
-    line-height: 1.12;
+    font-size: 28px;
+    line-height: 1.1;
+    margin-top: 6px;
   }
   .badge{
     width:100%;
     justify-content:center;
     text-align:center;
+    font-size: 12px;
+  }
+  .heroLeft .muted{
+    font-size: 15px;
+    line-height: 1.45;
   }
   .heroBtns{
     flex-direction:column;
+    margin-top: 14px;
   }
   .heroBtns .btn,
   .mockBottom .btn{
@@ -92,16 +99,22 @@
   }
   .brandCard{
     max-width: 100%;
-    padding: 18px;
+    padding: 16px;
   }
   .heroCardTitle{
-    font-size: 26px;
+    font-size: 24px;
+    margin-top: 12px;
   }
   .heroChecklist{
     gap: 8px;
+    margin-top: 14px;
   }
   .heroCheck{
-    padding: 11px 12px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .mockBottom{
+    margin-top: 12px;
   }
   .feat{
     padding: 14px;

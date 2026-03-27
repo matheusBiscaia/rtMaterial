@@ -38,22 +38,48 @@
 }
 @media(max-width:760px){
   .nav{
-    padding: 10px 12px;
+    padding: 12px;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .links{display:none}
-  .nav > .btn{
-    display:none;
   }
   .brand{
     width:100%;
     justify-content:center;
   }
-  .nav{
-    gap: 10px;
+  .links{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap:8px;
+  }
+  .links a{
+    min-height: 46px;
+    justify-content:center;
+    text-align:center;
+    padding:10px 8px;
+    background: rgba(255,255,255,.03);
+    border-color: rgba(255,255,255,.08);
+  }
+  .nav > .btn{
+    width:100%;
+    min-height: 48px;
   }
   .brandLogo{
     width: min(160px, 100%);
+  }
+}
+
+@media(max-width:520px){
+  .navWrap{
+    padding: 10px 10px 0;
+  }
+  .links{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .brandBadge{
+    padding: 6px 10px;
+  }
+  .brandLogo{
+    width: min(145px, 100%);
   }
 }
