@@ -48,17 +48,24 @@
   }
   .links{
     width:100%;
-    display:grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap:8px;
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding: 2px 2px 8px;
+    scroll-snap-type:x proximity;
+    scrollbar-width:none;
   }
+  .links::-webkit-scrollbar{display:none}
   .links a{
-    min-height: 46px;
+    flex: 0 0 auto;
+    min-height: 42px;
+    min-width: 108px;
     justify-content:center;
     text-align:center;
-    padding:10px 8px;
-    background: rgba(255,255,255,.03);
-    border-color: rgba(255,255,255,.08);
+    padding:10px 14px;
+    background: rgba(255,255,255,.04);
+    border-color: rgba(255,255,255,.1);
+    scroll-snap-align:start;
   }
   .nav > .btn{
     width:100%;
@@ -73,13 +80,15 @@
   .navWrap{
     padding: 10px 10px 0;
   }
-  .links{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .brandBadge{
     padding: 6px 10px;
   }
   .brandLogo{
     width: min(145px, 100%);
+  }
+  .links a{
+    min-width: 96px;
+    min-height: 40px;
+    padding: 9px 12px;
   }
 }
