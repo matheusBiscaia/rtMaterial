@@ -37,58 +37,70 @@
   border-color: rgba(255,255,255,.16);
 }
 @media(max-width:760px){
+  .navWrap{
+    padding: 8px 10px 0;
+    background: linear-gradient(180deg, rgba(11,16,32,.92), rgba(11,16,32,.68), transparent);
+  }
   .nav{
-    padding: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 10px 12px 12px;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    align-items:center;
+    gap: 10px;
   }
   .brand{
-    width:100%;
-    justify-content:center;
+    width:auto;
+    justify-content:flex-start;
   }
   .links{
+    grid-column: 1 / -1;
     width:100%;
     display:flex;
-    gap:10px;
+    gap:8px;
     overflow-x:auto;
-    padding: 2px 2px 8px;
+    padding: 2px 1px 2px;
     scroll-snap-type:x proximity;
     scrollbar-width:none;
   }
   .links::-webkit-scrollbar{display:none}
   .links a{
     flex: 0 0 auto;
-    min-height: 42px;
-    min-width: 108px;
+    min-height: 38px;
+    min-width: 94px;
     justify-content:center;
     text-align:center;
-    padding:10px 14px;
-    background: rgba(255,255,255,.04);
+    padding:8px 12px;
+    background: rgba(255,255,255,.05);
     border-color: rgba(255,255,255,.1);
     scroll-snap-align:start;
+    font-size: 15px;
   }
   .nav > .btn{
-    width:100%;
-    min-height: 48px;
+    display:none;
   }
   .brandLogo{
-    width: min(160px, 100%);
+    width: min(122px, 100%);
+  }
+  .brandBadge{
+    padding: 5px 8px;
+    border-radius: 14px;
   }
 }
 
 @media(max-width:520px){
   .navWrap{
-    padding: 10px 10px 0;
+    padding: 8px 8px 0;
   }
   .brandBadge{
-    padding: 6px 10px;
+    padding: 4px 7px;
   }
   .brandLogo{
-    width: min(145px, 100%);
+    width: min(110px, 100%);
   }
   .links a{
-    min-width: 96px;
-    min-height: 40px;
-    padding: 9px 12px;
+    min-width: 86px;
+    min-height: 36px;
+    padding: 8px 10px;
+    font-size: 14px;
   }
 }
