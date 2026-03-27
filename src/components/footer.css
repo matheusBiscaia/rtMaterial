@@ -11,6 +11,6 @@
 .footTitle{font-weight:800}
 .footRight{text-align:right}
 @media(max-width:720px){
-  .footer{flex-direction:column; align-items:flex-start}
+  .footer{flex-direction:column; align-items:flex-start; padding:14px 16px}
   .footRight{text-align:left}
 }

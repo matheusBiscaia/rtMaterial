@@ -37,9 +37,21 @@
   border-color: rgba(255,255,255,.16);
 }
 @media(max-width:760px){
-  .links{display:none}
   .nav{
     padding: 10px 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .links{display:none}
+  .nav > .btn{
+    display:none;
+  }
+  .brand{
+    width:100%;
+    justify-content:center;
+  }
+  .nav{
+    gap: 10px;
   }
   .brandLogo{
     width: min(160px, 100%);

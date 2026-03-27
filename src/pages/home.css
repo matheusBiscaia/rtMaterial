@@ -1,5 +1,5 @@
 .hero{padding: 22px; display:grid; grid-template-columns: 1.15fr .85fr; gap:18px}
-.hero h1{margin: 10px 0 10px; font-size: 40px; line-height:1.08}
+.hero h1{margin: 10px 0 10px; font-size: 40px; line-height:1.08; overflow-wrap:anywhere}
 .grad{
   background: linear-gradient(135deg, rgba(0,255,200,1), rgba(140,120,255,1));
   -webkit-background-clip: text;
@@ -8,7 +8,7 @@
 }
 .heroBtns{display:flex; gap:10px; margin-top: 16px; flex-wrap:wrap}
 .heroStats{display:flex; gap:18px; margin-top: 18px; flex-wrap:wrap}
-.stat{padding: 10px 12px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.05)}
+.stat{padding: 10px 12px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.05); min-width: 120px}
 .statNum{font-weight:900; font-size: 18px}
 .heroRight{display:flex; align-items:center; justify-content:center}
 .brandCard{
@@ -59,4 +59,51 @@
 @media(max-width:900px){
   .hero{grid-template-columns: 1fr}
   .hero h1{font-size: 34px}
+}
+
+@media(max-width:640px){
+  .hero{
+    padding: 16px;
+    gap: 16px;
+  }
+  .hero h1{
+    font-size: 30px;
+    line-height: 1.12;
+  }
+  .badge{
+    width:100%;
+    justify-content:center;
+    text-align:center;
+  }
+  .heroBtns{
+    flex-direction:column;
+  }
+  .heroBtns .btn,
+  .mockBottom .btn{
+    width:100%;
+  }
+  .heroStats{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .stat{
+    min-width: 0;
+  }
+  .brandCard{
+    max-width: 100%;
+    padding: 18px;
+  }
+  .heroCardTitle{
+    font-size: 26px;
+  }
+  .heroChecklist{
+    gap: 8px;
+  }
+  .heroCheck{
+    padding: 11px 12px;
+  }
+  .feat{
+    padding: 14px;
+  }
 }
